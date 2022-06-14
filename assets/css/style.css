@@ -70,6 +70,45 @@ header a {
   position: absolute;
   bottom: 120px;
   right: 140px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+}
+
+.hero-form h3 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.hero-form p {
+  margin: 5px 0 15px;
+}
+
+.form-input {
+  border: 1px solid var(--tertiary-color);
+  display: block;
+  padding: 7px 15px;
+  font-size: 16px;
+  color: var(--tertiary-color);
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.hero-form label {
+  margin: 0 5px;
+}
+
+.hero-form button {
+  background-color: var(--tertiary-color);
+  color: var(--secondary-color);
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  display: block;
+  outline: none;
+  border-radius: 5px;
+  width: 100%;
 }
 
 /* apply styles to <footer> */
