@@ -1,6 +1,7 @@
 :root {
   --primary-color: #39a6b2;
   --secondary-color: #fce138;
+  --tertiary-color: #024e76;
 }
 
 * {
@@ -12,6 +13,10 @@
 body {
   font-family: Helvetica, Arial, sans-serif;
   color: var(--primary-color);
+}
+
+section {
+  padding: 60px;
 }
 
 /* apply styles to <header> */
@@ -47,6 +52,26 @@ header a {
   text-decoration: none;
 }
 
+/*apply style to hero section */
+.hero {
+  background-image: url(../images/hero-bg.jpg);
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-form {
+  background-color: var(--secondary-color);
+  padding: 20px;
+  width: 500px;
+  color: var(--tertiary-color);
+  border: 3px solid var(--tertiary-color);
+  position: absolute;
+  bottom: 120px;
+  right: 140px;
+}
+
 /* apply styles to <footer> */
 footer {
   background-color: var(--secondary-color);
@@ -67,5 +92,5 @@ footer > div {
 }
 
 footer > a {
-  color: #024e76;
+  color: var(--tertiary-color);
 }
