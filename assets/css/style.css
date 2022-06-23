@@ -21,6 +21,9 @@ section {
 
 /* apply styles to <header> */
 header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   padding: 20px 35px;
   background-color: var(--primary-color);
 }
@@ -29,11 +32,10 @@ header h1 {
   font-weight: bold;
   font-size: 36px;
   color: var(--secondary-color);
-  display: inline;
+
 }
 
 header nav {
-  float: right;
   margin: 7px 0;
 }
 
