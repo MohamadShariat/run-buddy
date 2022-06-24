@@ -138,7 +138,6 @@ header a {
 
 /* what we do and what you do sections */
 
-
 .section-title {
   padding-bottom: 20px;
   text-align: center;
@@ -156,8 +155,6 @@ header a {
   border-color: var(--primary-color);
 }
 
-
-
 .intro p {
   line-height: 1.7;
   color: var(--primary-color);
@@ -171,33 +168,55 @@ header a {
   background: var(--secondary-color);
 }
 
-.steps div {
-  margin-bottom: 80px;
+.step {
+  margin: 50px auto;
+  padding-bottom: 50px;
+  width: 80%;
+  border-bottom: 1px solid var(--primary-color);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.steps img {
-  width: 15%;
-  margin: 10px 0;
-}
-
-.steps h3 {
+.step h3 {
   color: var(--tertiary-color);
   font-size: 46px;
-  margin-top: 10px;
+  flex: 1 30%;
 }
 
-.steps p {
+.step-info {
+  flex: 2 70%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.step-img {
+  flex: 1 12%;
+  margin-right: 20px;
+}
+
+.step-img img {
+  width: 100%;
+}
+
+.step-text {
+  flex: 12;
+}
+
+.step-text h4 {
+  font-size: 26px;
+  line-height: 1.5;
+  color: var(--tertiary-color);
+}
+
+.step-text p {
   color: var(--primary-color);
-  font-size: 23px;
-}
-
-.steps span {
-  font-size: 38px;
+  font-size: 18px;
 }
 
 /* meet the trainer section */
-
-
 
 .trainer {
   text-align: center;
@@ -319,6 +338,6 @@ footer > a {
   text-align: right;
 }
 
-.flex-row{
+.flex-row {
   display: flex;
 }
