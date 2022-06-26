@@ -25,13 +25,21 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 20px 35px;
-  background-color: var(--primary-color);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-image: url(../images/hero-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: 80%;
 }
 
 header h1 {
   font-weight: bold;
   font-size: 36px;
   color: var(--secondary-color);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header nav {
@@ -50,12 +58,14 @@ header nav ul li a {
   padding: 10px 15px;
   font-weight: lighter;
   font-size: 1.55vw;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header nav ul li a:hover {
-  border-bottom: 3px solid var(--secondary-color);
-  padding-bottom: 5px;
-  opacity: 0.8;
+  background: var(--secondary-color);
+  color: var(--tertiary-color);
+  border-radius: 15px;
+  text-shadow: none;
 }
 
 header a {
@@ -72,6 +82,8 @@ header a {
   background-image: url(../images/hero-bg.jpg);
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
+  background-position: 80%;
 }
 
 .hero-cta {
@@ -87,19 +99,20 @@ header a {
   font-style: italic;
   font-size: 55px;
   color: var(--secondary-color);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .hero-form {
   width: 40%;
   margin: 3.5%;
-  background-color: var(--secondary-color);
+  background-color: rgba(255, 255, 56, 0.8);
   padding: 20px;
   color: var(--tertiary-color);
   border: 3px solid var(--tertiary-color);
-  border-radius: 10px;
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
 }
 
 .hero-form h3 {
@@ -119,6 +132,13 @@ header a {
   color: var(--tertiary-color);
   width: 100%;
   margin-bottom: 15px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.form-input:focus {
+  background-color: rgba(255, 255, 255, 1);
+  outline: none;
 }
 
 .hero-form label {
@@ -134,7 +154,11 @@ header a {
   display: block;
   outline: none;
   border-radius: 5px;
-  width: 100%;
+  border-radius: 10px;
+}
+
+.hero-form button:hover {
+  background-color: var(--primary-color);
 }
 
 /* what we do and what you do sections */
@@ -173,11 +197,16 @@ header a {
   margin: 50px auto;
   padding-bottom: 50px;
   width: 80%;
-  border-bottom: 1px solid var(--primary-color);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid var(--primary-color);
+
+}
+
+.step:last-child{
+  border-bottom:none;
 }
 
 .step h3 {
@@ -314,6 +343,14 @@ header a {
   width: 100%;
   margin-bottom: 15px;
   margin-top: 5px;
+  border-radius: 10px;
+  background-color: rgba(57, 166, 178, 0.9);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  background-color: rgba(255, 255, 255, 1);
+  outline: none;
 }
 
 .contact-form button {
@@ -324,6 +361,12 @@ header a {
   text-align: center;
   padding: 15px 0;
   font-size: 16px;
+  border-radius: 10px;
+}
+
+.contact-form button:hover {
+  color: var(--secondary-color);
+  background: var(--primary-color);
 }
 
 /* apply styles to <footer> */
@@ -373,6 +416,7 @@ footer > a {
   header {
     padding-bottom: 0;
     justify-content: center;
+    position: relative;
   }
 
   header h1 {
@@ -447,31 +491,31 @@ footer > a {
 }
 
 @media screen and (max-width: 575px) {
-  .hero-form button{
+  .hero-form button {
     width: 100%;
   }
 
-  .section-title{
+  .section-title {
     width: 95%;
   }
 
-  .intro p{
+  .intro p {
     width: 100%;
   }
 
-  .trainer{
+  .trainer {
     flex: 0 100%;
   }
 
-  .contact-info{
+  .contact-info {
     text-align: center;
   }
 
-  .contact-info>*{
+  .contact-info > * {
     flex: 0 100%;
   }
 
-  .contact-form{
+  .contact-form {
     order: 3;
   }
 }
